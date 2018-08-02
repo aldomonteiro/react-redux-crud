@@ -2,7 +2,7 @@ import passport from 'passport';
 import { signin, signup, verifiEmail, resendVerification } from './controllers/authController';
 import { resetPassword, verifyResetPassword, resetPasswordNew } from './controllers/resetPasswordController';
 import { fetchUsers } from './controllers/usersController';
-import { categoriesController, fetchCategories, addCategory } from './controllers/categoriesController';
+import { categoriesController, fetchCategories, addCategory, getCategory, deleteCategory } from './controllers/categoriesController';
 import passportService from './services/passport';
 
 const requireAuth = passport.authenticate('jwt', { session: false });
